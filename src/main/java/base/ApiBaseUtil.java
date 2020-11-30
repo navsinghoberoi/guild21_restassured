@@ -2,6 +2,7 @@ package base;
 
 
 import io.qameta.allure.Step;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -48,6 +49,7 @@ public class ApiBaseUtil {
         System.out.println("Initiating GET request at endpoint -> " + endpoint);
         Response response = given()
                 .log().all()
+                .filter(new AllureRestAssured())
                 .when()
                 .get(endpoint);
         printResponseBody(response);
@@ -58,6 +60,7 @@ public class ApiBaseUtil {
         System.out.println("Initiating POST request with payload " + requestBody + " at endpoint -> " + endpoint);
         Response response = given()
                 .log().all()
+                .filter(new AllureRestAssured())
                 .when()
                 .body(requestBody)
                 .post(endpoint);
