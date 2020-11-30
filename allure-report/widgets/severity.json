@@ -1,0 +1,41 @@
+[ {
+  "uid" : "81b15a19afb6e661",
+  "name" : "validateApiResponseCode",
+  "time" : {
+    "start" : 1606734940347,
+    "stop" : 1606734940933,
+    "duration" : 586
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "bd01557c99489e20",
+  "name" : "validateApiResponseCode",
+  "time" : {
+    "start" : 1606734937833,
+    "stop" : 1606734940137,
+    "duration" : 2304
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "fe3d0e101ac3c762",
+  "name" : "validateApiResponseTime",
+  "time" : {
+    "start" : 1606734940267,
+    "stop" : 1606734940344,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "462d1a0efd3a23a1",
+  "name" : "validateApiResponseTime",
+  "time" : {
+    "start" : 1606734940936,
+    "stop" : 1606734940936,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

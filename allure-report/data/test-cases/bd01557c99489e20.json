@@ -1,0 +1,99 @@
+{
+  "uid" : "bd01557c99489e20",
+  "name" : "validateApiResponseCode",
+  "fullName" : "tests.GetUserApiTests.validateApiResponseCode",
+  "historyId" : "682b85e732d8df3df5b15a945958f516",
+  "time" : {
+    "start" : 1606734937833,
+    "stop" : 1606734940137,
+    "duration" : 2304
+  },
+  "description" : "Hitting the api/users endpoint to fetch user data",
+  "descriptionHtml" : "<p>Hitting the api/users endpoint to fetch user data</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Hitting the api/users endpoint to fetch user data",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Validating that response status code is equal to 200",
+      "time" : {
+        "start" : 1606734940124,
+        "stop" : 1606734940132,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "response",
+        "value" : "io.restassured.internal.RestAssuredResponseImpl@1f5d7fd5"
+      }, {
+        "name" : "expectedStatusCode",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.GetUserApiTests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.GetUserApiTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "validateApiResponseCode"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Sanity tests suite"
+  }, {
+    "name" : "suite",
+    "value" : "Get user and create user endpoints Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.GetUserApiTests"
+  }, {
+    "name" : "host",
+    "value" : "Navpreets-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "13522@Navpreets-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd01557c99489e20.json",
+  "parameterValues" : [ ]
+}

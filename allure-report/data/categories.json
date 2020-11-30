@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Status Code Check Failed expected:<200> but was:<201>",
+      "children" : [ {
+        "name" : "validateApiResponseCode",
+        "uid" : "81b15a19afb6e661",
+        "parentUid" : "ca82f49ca03be63d272811fc257860e9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1606734940347,
+          "stop" : 1606734940933,
+          "duration" : 586
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ca82f49ca03be63d272811fc257860e9"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
