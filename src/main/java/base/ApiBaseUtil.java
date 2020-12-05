@@ -3,6 +3,8 @@ package base;
 
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
+import io.restassured.config.EncoderConfig;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import java.util.concurrent.TimeUnit;
@@ -48,6 +50,8 @@ public class ApiBaseUtil {
         System.out.println("Initiating GET request at endpoint -> " + endpoint);
         Response response = given()
                 .log().all()
+                .proxy("localhost", 8888)
+                .relaxedHTTPSValidation()
                 .when()
                 .get(endpoint);
         printResponseBody(response);
@@ -58,13 +62,13 @@ public class ApiBaseUtil {
         System.out.println("Initiating POST request with payload " + requestBody + " at endpoint -> " + endpoint);
         Response response = given()
                 .log().all()
+                .proxy("localhost",8888)
+                .relaxedHTTPSValidation()
                 .when()
                 .body(requestBody)
                 .post(endpoint);
         printResponseBody(response);
         return response;
     }
-
-
 }
 
