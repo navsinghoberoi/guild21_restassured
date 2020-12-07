@@ -23,7 +23,7 @@ public class CreateUserTests extends ApiBaseUtil {
                 "    \"job\": \"Shelby\"\n" +
                 "}";
 
-        response = executePostRequest(Constants.BASE_URL + "/api/users", reqBody);
+        response = executePostRequest("https://reqres.in/api/users", reqBody);
         validateStatusCode(response, 201);
     }
 

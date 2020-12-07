@@ -18,7 +18,7 @@ public class GetUserApiTests extends ApiBaseUtil {
     @Severity(SeverityLevel.BLOCKER)
     @Test()
     public void validateApiResponseCode() {
-        response = executeGetRequest(Constants.BASE_URL + "/api/users/2");
+        response = executeGetRequest( "https://reqres.in/api/users/2");
         validateStatusCode(response,200);
     }
 
