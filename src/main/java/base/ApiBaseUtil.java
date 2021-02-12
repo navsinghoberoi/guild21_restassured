@@ -48,8 +48,8 @@ public class ApiBaseUtil {
     public Response executeGetRequest(String endpoint) {
         System.out.println("Initiating GET request at endpoint -> " + endpoint);
         Response response = given()
-                .log().all()
                 .filter(new AllureRestAssured())
+                .log().all()
                 .when()
                 .get(endpoint);
         printResponseBody(response);
@@ -59,8 +59,8 @@ public class ApiBaseUtil {
     public Response executePostRequest(String endpoint, Object requestBody) {
         System.out.println("Initiating POST request with payload " + requestBody + " at endpoint -> " + endpoint);
         Response response = given()
-                .log().all()
                 .filter(new AllureRestAssured())
+                .log().all()
                 .when()
                 .body(requestBody)
                 .post(endpoint);
